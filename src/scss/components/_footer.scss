@@ -1,0 +1,42 @@
+@import "layout/var";
+
+.footer {
+  padding: 60px 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+  color: #C4C4C4;
+
+  @media (max-width: $md) {
+    font-size: 12px;
+  }
+
+  @media (max-width: $xs) {
+    padding: 20px 0;
+    flex-direction: column;
+  }
+
+  &__logo {
+    margin: 0 180px;
+
+    @media (max-width: $md) {
+      width: 180px;
+      margin: 0 80px;
+    }
+
+    @media (max-width: $xs) {
+      margin: 10px 0;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__link {
+    color: #C4C4C4;
+  }
+}

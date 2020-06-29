@@ -1,0 +1,262 @@
+doctype html
+html
+    head
+        meta(http-equiv="text/html" charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Royal Persona
+        link(rel="stylesheet" type="text/css" href="css/style.min.css")
+    body
+        section.top
+            div.top__flower-left
+                img(src="img/top-left.png")
+            div.top__flower-right
+                img(src="img/top-right.png")
+            div.top__line
+
+            div.top-slider
+                div.top-slider__slide(style="background-image: url(img/slide2.jpg)")
+                    div.top-slider__content
+                        p.top-slider__text <strong>-20%</strong> на первое<br />посещение!
+                        button.button.top-slider__button.open-modal Записаться на прием
+
+                div.top-slider__slide(style="background-image: url(img/slide1.jpg)")
+                    div.top-slider__content
+                        p.top-slider__text <strong>-20%</strong> на первое<br />посещение!
+                        button.button.top-slider__button.open-modal Записаться на прием
+
+            header.header
+                div.header__logo
+                    img(src="img/logo.svg")
+
+                button.header__mobile-menu-button
+                    span
+                    span
+                    span
+
+                div.header__phone
+                    span Телефон для записи
+                    a(href="tel:+7 495 555 63 68") +7 495 555 63 68
+
+                nav.header-menu
+                    a.header-menu__link(href="#kosmetologiya") Косметология
+                    a.header-menu__link(href="#parikmaherskie-uslugi") Парикмахерские услуги
+                    a.header-menu__link(href="#uhod-za-nogtyami") Уход за ногтями
+                    a.header-menu__link(href="#massazh") Массаж
+                    a.header-menu__link(href="#permanentniy-makiyazh") Перманентный макияж
+                    a.header-menu__link(href="#kontakty") Контакты
+
+        // block
+
+        section.block#kosmetologiya
+            div.block__content
+                h2.block__title КОСМЕТОЛОГИЯ
+
+                div.block__list
+                    div.block-line
+                        span.block-line__name Лифтинг уходы
+                        span.block-line__dots
+                        span.block-line__price от 1 500 ₽
+                    div.block-line
+                        span.block-line__name Уход за лицом
+                        span.block-line__dots
+                        span.block-line__price от 2 500 ₽
+                    div.block-line
+                        span.block-line__name Уходы за жирной кожей
+                        span.block-line__dots
+                        span.block-line__price от 750 ₽
+                    div.block-line
+                        span.block-line__name Чистки
+                        span.block-line__dots
+                        span.block-line__price от 1 500 ₽
+                    div.block-line
+                        span.block-line__name Уходы за сухой кожей
+                        span.block-line__dots
+                        span.block-line__price от 1 500 ₽
+                    div.block-line
+                        span.block-line__name Эпиляция
+                        span.block-line__dots
+                        span.block-line__price от 1 500 ₽
+                    div.block-line
+                        span.block-line__name Пилинги
+                        span.block-line__dots
+                        span.block-line__price от 1 500 ₽
+                    div.block-line
+                        span.block-line__name Лазерная эпиляция
+                        span.block-line__dots
+                        span.block-line__price от 1 500 ₽
+                    div.block-line
+                        span.block-line__name Шугаринг
+                        span.block-line__dots
+                        span.block-line__price от 1 500 ₽
+
+                button.button.open-modal Записаться на прием
+
+            div.block__image
+                img(src="img/block1.jpg")
+
+        // block
+
+        section.block.block--reverse#parikmaherskie-uslugi
+            div.block__flower-left
+                img(src="img/block-left.png")
+
+            div.block__content
+                h2.block__title Парикмахерские услуги
+
+                div.block__list
+                    div.block-line
+                        span.block-line__name Мужской зал
+                        span.block-line__dots
+                        span.block-line__price от 1 500 ₽
+                    div.block-line
+                        span.block-line__name Женская стрижка + подарок
+                        span.block-line__dots
+                        span.block-line__price 1 300 ₽
+                    div.block-line
+                        span.block-line__name Стрижки и укладки
+                        span.block-line__dots
+                        span.block-line__price от 1 500 ₽
+                    div.block-line
+                        span.block-line__name Окрашивание
+                        span.block-line__dots
+                        span.block-line__price от 2 500 ₽
+                    div.block-line
+                        span.block-line__name Лечение волос
+                        span.block-line__dots
+                        span.block-line__price от 750 ₽
+                    div.block-line
+                        span.block-line__name Завивка волос
+                        span.block-line__dots
+                        span.block-line__price от 1 500 ₽
+                    div.block-line
+                        span.block-line__name Кератиновое выпрямление
+                        span.block-line__dots
+                        span.block-line__price от 1 500 ₽
+                    div.block-line
+                        span.block-line__name Детские стрижки
+                        span.block-line__dots
+                        span.block-line__price от 500 ₽
+
+                button.button.open-modal Записаться на прием
+
+            div.block__image
+                img(src="img/block2.jpg")
+
+        // block
+
+        section.block#uhod-za-nogtyami
+            div.block__content
+                h2.block__title Уход за ногтями
+
+                div.block__list
+                    div.block-line
+                        span.block-line__name Маникюр + покрытие
+                        span.block-line__dots
+                        span.block-line__price от 1 500 ₽
+                    div.block-line
+                        span.block-line__name Педикюр + покрытие
+                        span.block-line__dots
+                        span.block-line__price от 2 500 ₽
+                    div.block-line
+                        span.block-line__name Наращивание ногтей
+                        span.block-line__dots
+                        span.block-line__price от 750 ₽
+
+                button.button.open-modal Записаться на прием
+
+            div.block__image
+                img(src="img/block3.jpg")
+
+        // block
+
+        section.block.block--reverse#massazh
+            div.block__flower-right
+                img(src="img/block-right.png")
+
+            div.block__content
+                h2.block__title Массаж
+
+                div.block__list
+                    div.block-line
+                        span.block-line__name Коррекция фигуры LPG
+                        span.block-line__dots
+                        span.block-line__price от 1 500 ₽
+                    div.block-line
+                        span.block-line__name RF лифтинг
+                        span.block-line__dots
+                        span.block-line__price от 2 500 ₽
+                    div.block-line
+                        span.block-line__name UZ липосакция
+                        span.block-line__dots
+                        span.block-line__price от 750 ₽
+                    div.block-line
+                        span.block-line__name Классический массаж
+                        span.block-line__dots
+                        span.block-line__price от 1 500 ₽
+                    div.block-line
+                        span.block-line__name Обертывание
+                        span.block-line__dots
+                        span.block-line__price от 1 500 ₽
+                    div.block-line
+                        span.block-line__name Моделирующий массаж
+                        span.block-line__dots
+                        span.block-line__price от 1 500 ₽
+
+                button.button.open-modal Записаться на прием
+
+            div.block__image
+                img(src="img/block4.jpg")
+
+        // block
+
+        section.block#permanentniy-makiyazh
+            div.block__content
+                h2.block__title Перманентный макияж
+
+                div.block__text
+                    p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+
+                button.button.open-modal Записаться на прием
+
+            div.block__image
+                img(src="img/block5.jpg")
+
+        // contacts
+
+        section.contacts#kontakty
+
+            div.contacts__flower-left
+                img(src="img/bottom-left.png")
+
+            div.contacts__flower-right
+                img(src="img/bottom-right.png")
+
+            h3.contacts__title Наши<br />контакты
+
+            div.contacts__block
+                div.contacts__content
+                    address.contacts__item.contacts__item--address 115088, Москва, 11-я ул. Машиностроения, 5
+                    a.contacts__item.contacts__item--phone(href="tel:+7 (495) 775-77-55") +7 (495) 775-77-55
+                    a.contacts__item.contacts__item--mail(href="mailto:mail@SalonPersona.com") mail@SalonPersona.com
+
+                    button.contacts__button.open-modal Заказать звонок
+
+                div.contacts__map
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab35858638d515f393602f5f86415449208d2da345b98438bcff5789603e0b72a&amp;source=constructor&amp;lang=ru_RU"></iframe>
+
+        // footer
+
+        footer.footer
+            p.footer__copyright Salon Persona 2020 | All Rights Reserved
+            div.footer__logo
+                img(src="img/logo-black.svg")
+            a.footer__link(href="#") Политика конфиденциальности
+
+        include ../components/modal.pug
+
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js")
+        script(src="js/owl.carousel.min.js")
+        script(src="js/inputmask.js")
+        script(src="js/jquery.inputmask.js")
+        script(type="text/javascript" src="js/scripts.js")

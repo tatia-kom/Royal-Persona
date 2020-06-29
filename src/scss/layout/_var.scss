@@ -1,0 +1,42 @@
+//fonts
+$font100: 'Gilroy Thin';
+$font300: 'Gilroy Light';
+$font400: 'Gilroy Regular';
+$font500: 'Gilroy Medium';
+$font700: 'Gilroy Bold';
+
+//colors
+
+$rose: #F650A9;
+
+//media
+
+$lg: 1539px;
+$md: 1199px;
+$sm: 991px;
+$xs: 767px;
+
+$container: 1420px;
+$containerLg: 1140px;
+$containerMd: 932px;
+$containerSm: 728px;
+
+// mixins
+
+@mixin placeholderColor($color) {
+  &::-moz-placeholder {
+    color: $color;
+  }
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+  &::-ms-input-placeholder {
+    color: $color;
+  }
+  &::placeholder {
+    color: $color;
+  }
+}

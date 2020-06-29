@@ -1,0 +1,223 @@
+@import "layout/var";
+
+.top {
+  padding: 17px 20px 20px;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: $md) {
+    padding: 10px;
+  }
+
+  @media (max-width: $xs) {
+    padding: 0 0 30px;
+  }
+
+  &__flower-left {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 28.9%;
+
+    @media (max-width: $xs) {
+      display: none;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__flower-right {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    width: 22.39%;
+
+    @media (max-width: $xs) {
+      display: none;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__line {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: calc(50% + 425px);
+    width: 59px;
+    height: 144px;
+    background: $rose;
+    box-shadow: inset 0px 4px 20px rgba(0, 0, 0, 0.6);
+
+    @media (max-width: 1400px) {
+      right: calc(50% + 250px);
+    }
+
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
+}
+
+.top-slider {
+  &__slide {
+    height: 920px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    @media (max-width: $md) {
+      height: 720px;
+    }
+
+    @media (max-width: $xs) {
+      height: 400px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 514px;
+      background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+
+      @media (max-width: $xs) {
+        height: 200px;
+      }
+    }
+  }
+
+  &__content {
+    padding: 220px 0 0 calc((100% + 40px - #{$container}) / 2 - 20px);
+
+    @media (max-width: $lg) {
+      padding-left: calc((100% + 40px - #{$containerLg}) / 2 - 20px);
+    }
+
+    @media (max-width: $md) {
+      padding-left: calc((100% + 20px - #{$containerMd}) / 2 - 10px);
+    }
+
+    @media (max-width: $sm) {
+      padding-left: calc((100% + 20px - #{$containerSm}) / 2 - 10px);
+    }
+
+    @media (max-width: $xs) {
+      padding: 100px 15px 0;
+      position: relative;
+    }
+  }
+
+  &__text {
+    color: $rose;
+    position: relative;
+    font-size: 83px;
+    text-transform: uppercase;
+    font-family: $font100;
+
+    @media (max-width: $md) {
+      font-size: 63px;
+    }
+
+    @media (max-width: $sm) {
+      font-size: 45px;
+    }
+
+    @media (max-width: $xs) {
+      font-size: 30px;
+    }
+
+    strong {
+      display: block;
+      font-size: 144px;
+      line-height: 174px;
+      font-family: $font700;
+
+      @media (max-width: $md) {
+        font-size: 124px;
+        line-height: 154px;
+      }
+
+      @media (max-width: $sm) {
+        font-size: 100px;
+        line-height: 130px;
+      }
+
+      @media (max-width: $xs) {
+        font-size: 70px;
+        line-height: 100px;
+      }
+    }
+  }
+
+  &__button {
+    margin-top: 36px;
+
+    @media (max-width: $xs) {
+      margin-top: 26px;
+    }
+  }
+
+  .owl-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+
+    @media (max-width: $md) {
+      bottom: 30px;
+    }
+
+    @media (max-width: $xs) {
+      bottom: 15px;
+    }
+
+    .owl-dot {
+      width: 16px;
+      height: 16px;
+      display: flex;
+      background: transparent;
+      border-radius: 50%;
+      transition: 0.3s;
+      margin: 0 4px;
+
+      @media (max-width: $xs) {
+        width: 12px;
+        height: 12px;
+      }
+
+      span {
+        display: block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: white;
+        margin: auto;
+        transition: 0.3s;
+
+        @media (max-width: $xs) {
+          width: 8px;
+          height: 8px;
+        }
+      }
+
+      &.active {
+        background: #E68688;
+
+        span {
+          background: #E68688;
+        }
+      }
+    }
+  }
+}

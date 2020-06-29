@@ -1,0 +1,23 @@
+div.modal#formModal
+    form.modal__content
+        span.modal__close
+
+        p.modal__title Заказать<br />звонок
+
+        input.modal__input(type="text" placeholder="Ваше имя")
+
+        input.modal__input.tel-input(type="text" placeholder="Телефон")
+
+        label.modal__checkbox
+            input(type="checkbox" checked)
+            p Даю согласие на обработку персональных данных
+
+        button.button.modal__button Записаться на прием
+
+div.modal#thanksModal
+    form.modal__content
+        span.modal__close
+
+        p.modal__title Спасибо!
+
+        p.modal__text В ближайшее время мы с вами свяжемся.
