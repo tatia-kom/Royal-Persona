@@ -20,11 +20,6 @@ html
                         p.top-slider__text <strong>-20%</strong> на первое<br />посещение!
                         button.button.top-slider__button.open-modal Записаться на прием
 
-                div.top-slider__slide(style="background-image: url(img/slide1.jpg)")
-                    div.top-slider__content
-                        p.top-slider__text <strong>-20%</strong> на первое<br />посещение!
-                        button.button.top-slider__button.open-modal Записаться на прием
-
             header.header
                 div.header__logo
                     img(src="img/logo.svg")
@@ -37,6 +32,13 @@ html
                 div.header__phone
                     span Телефон для записи
                     a(href="tel:+7 495 555 63 68") +7 495 555 63 68
+                    div.header-soc
+                        a.header-soc__item(href="")
+                            img(src="img/tg.svg")
+                        a.header-soc__item(href="")
+                            img(src="img/wa.svg")
+                        a.header-soc__item(href="")
+                            img(src="img/insta.svg")
 
                 nav.header-menu
                     a.header-menu__link(href="#kosmetologiya") Косметология
@@ -237,7 +239,16 @@ html
             div.contacts__block
                 div.contacts__content
                     address.contacts__item.contacts__item--address 115088, Москва, 11-я ул. Машиностроения, 5
-                    a.contacts__item.contacts__item--phone(href="tel:+7 (495) 775-77-55") +7 (495) 775-77-55
+
+                    div.contacts__flex
+                        a.contacts__item.contacts__item--phone(href="tel:+7 (495) 775-77-55") +7 (495) 775-77-55
+                        a.contacts__soc(href="")
+                            img(src="img/tg-white.svg")
+                        a.contacts__soc(href="")
+                            img(src="img/wa-white.svg")
+                        a.contacts__soc(href="")
+                            img(src="img/insta-white.svg")
+
                     a.contacts__item.contacts__item--mail(href="mailto:mail@SalonPersona.com") mail@SalonPersona.com
 
                     button.contacts__button.open-modal Заказать звонок

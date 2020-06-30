@@ -74,8 +74,8 @@
 
   &__content {
     background: linear-gradient(95.02deg, #F687AE 15.47%, #000000 201.41%);
-    width: 340px;
-    padding: 32px 60px 45px 16px;
+    width: 382px;
+    padding: 32px 16px 45px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -87,6 +87,26 @@
       top: auto;
       transform: none;
       width: 100%;
+    }
+  }
+
+  &__flex {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $xs) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__soc {
+    margin-bottom: 25px;
+    margin-left: 15px;
+
+    @media (max-width: $xs) {
+      &:nth-child(2) {
+        margin-left: auto;
+      }
     }
   }
 
@@ -128,6 +148,11 @@
       line-height: 50px;
       white-space: nowrap;
 
+      @media (max-width: $xs) {
+        width: 100%;
+        margin-bottom: 5px;
+      }
+
       &:before {
         background-image: url('../img/phone-icon.svg');
       }
@@ -152,9 +177,13 @@
     font-family: $font300;
     position: absolute;
     bottom: -18px;
-    right: 9px;
+    right: 52px;
     text-align: left;
     padding-left: 40px;
+
+    @media (max-width: $xs) {
+      right: 9px;
+    }
 
     &:hover {
       background: $rose;
