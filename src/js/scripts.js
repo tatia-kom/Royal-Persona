@@ -16,7 +16,12 @@ $(document).ready(function() {
     $('.header-menu__link').click(function(e){
         e.preventDefault();
         var href = $(this).attr('href');
-        $('html, body').animate({scrollTop: $(href).offset().top+"px"}, 500);
+        var move = 0;
+
+        if ($(window).width() < 768) {
+        	move = 80;
+        }
+        $('html, body').animate({scrollTop: $(href).offset().top-move+"px"}, 500);
         $('.header').removeClass('header--opened');
     });
 
@@ -50,6 +55,7 @@ $(document).ready(function() {
         dots: true,
         loop: true,
         autoplay: true,
+        autoplayTimeout: 10000,
         animateIn: 'fadeIn',
         animateOut: 'fadeOut'
     });
